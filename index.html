@@ -8,7 +8,7 @@
     <!-- Icon -->
 
     <!-- Title -->
-    <title>Derrick Ng - Personal Website</title>
+    <title>Derrick Ng - Portfolio</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,84 +26,123 @@
     <script src="https://kit.fontawesome.com/73b5eddb7f.js" crossorigin="anonymous"></script>
 
     <!-- CSS stylesheets -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="design/styles.css">
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="design/themify-icons/css/themify-icons.css">
 
     <!-- Color Tone -->
     <!-- https://colorhunt.co/palette/ecf9fffffbebffe7ccf8cba6 -->
 </head>
 
 
-<body class="dark-theme">
-
-    <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="container-fluid">
-
-            <a class="navbar-brand" href="#">Ng's Portfolio</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+<body id="home" class="dark-theme">
+    
+    <!-- <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a> -->
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/sheung-ncs/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.facebook.com/sheungncs/"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/sheung_ncs/"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/csheung/"><i class="ti-github" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+            </ul>  
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h1 class="header-title">Derrick Ng</h1>
+                <h5 class="header-mono" >Software Engineer | Web Developer</h5>
+                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>&nbsp;My Resume</button>
+                <button class="btn btn-primary btn-rounded btn-margin"><i class="ti-mobile pr-2"></i>&nbsp;Contact Me</button>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <!-- /* Toggler */ -->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <div id="navbarSupportedContent" class="collapse mt-sm-20 navbar-collapse">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                        <a href="#resume" class="nav-link">Resume</a>
                     </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Projects
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">What-To-Wear</a></li>
-                        <li><a class="dropdown-item" href="#">Music Soul</a></li>
-                        <li><a class="dropdown-item" href="#">Flappy Bird</a></li>
-                    </ul>
+                </ul>
+
+                <ul class="navbar-nav brand">
+                    <img src="images/formal_icon.jpg" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Derrick Ng</h5>
+                        <div class="brand-subtitle">Software Engineer | Web Developer</div>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
+
     </nav>
-
     
-
-    <!-- <div class="navbar-no-shadow wf-section">
-    </div>
-
-    <div class="hero-section wf-section">
-        <div class="container-large w-container">
-            <div class="w-layout-grid hero-grid">
-                <div id="w-node-_468910fd-dfff-e87d-5928-2fced49c52bb-b32510f0" class="hero-content">
-                    <div class="hero-text-wrapper">
-                        <h1 class="heading">HI, I’M TAYLER,<br>A&nbsp; PRODUCT DESIGNER 
-                        </h1>
-                    </div>
-                    <div class="hero-buttons">
-                        <a href="#portfolio" class="main-button w-inline-block" style="background-color: rgb(0, 0, 0);">
-                            <div class="button-line"></div>
-                            <div class="button-text">view portfolio</div>
-                        </a>
-                        <a href="/contact" class="main-button margin w-inline-block" style="background-color: rgb(0, 0, 0);">
-                            <div class="button-line"></div>
-                            <div class="button-text">contact me</div>
-                        </a>
-                    </div>
-                </div>
-                <div id="w-node-_3a48c09e-680a-e828-0136-98b7a83492d5-b32510f0" class="hero-content">
-                    <div class="circle-background" style="will-change: transform; transform: translate3d(25px, -8.74px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                        <img src="" loading="lazy" srcset="" sizes="(max-width: 479px) 99vw, (max-width: 767px) 86vw, (max-width: 991px) 87vw, 450.0000305175781px" alt="" class="hero-image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
 </body>
-
 </html>
 
+<!-- <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">My Portfolio</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item mr-auto">
+            <a class="nav-link" href="#">Features</a>
+            </li>
+
+            <ul class="navbar-nav brand">
+                <img src="images/formal_icon.jpg" alt="My Icon" class="brand-img">
+                <li class="brand-txt">
+                    <h5 class="brand-title">John Doe</h5>
+                    <div class="brand-subtitle">Web Designer | Developer</div>
+                </li>
+            </ul>
+
+            <li class="nav-item ml-auto">
+            <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
+            </a>
+            <ul class="dropdown-menu ml-auto">
+                <li><a class="dropdown-item" href="#">What-To-Wear</a></li>
+                <li><a class="dropdown-item" href="#">Music Soul</a></li>
+                <li><a class="dropdown-item" href="#">Flappy Bird</a></li>
+            </ul>
+            </li>
+        </ul>
+    </div>
+</div> -->
