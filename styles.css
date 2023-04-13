@@ -1,0 +1,19 @@
+.dark-theme {
+    background-color: #000000; /* black background */
+    color: #ffffff; /* white text */
+  }
+
+.custom-navbar {
+    /* background-color: #000; */
+    border-bottom: 1px solid #363636;
+    height: 50px;
+}
+
+.custom-navbar .navbar-brand {
+    color: #ffffff;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
